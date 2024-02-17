@@ -5,15 +5,62 @@
 
 
 }
-
-.nav-menu { 
-    display: none;
+:root {
+   --primary-color: #a3a660;
+   --secondary-color: #f1f2ce;
+   
+   --third-color: #8c5e35;
+   --fourth-color: #572d14;
  
+   --fuente-heading: "SodoSans-Black";
  }
+ html {
+ 
+
+   scroll-behavior: smooth;
+ }
+ 
+ body { 
+ 
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+ }
+ 
+ 
+ span { 
+    
+     color: var(--secondary-color);
+ }
+ 
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+    width: 100%;
+          
+          transition: 0.7s;
+     }
+     
+
+
+.menu-links { 
+   color: #181818;
+   text-decoration: none;
+
+}
+
+ 
+
+#boton-color { 
+
+   background-color: var(--secondary-color);
+}
 
  #profile-photo {
-   width: 350px;
-   height: 350px;
+   width: 250px;
+   height: 250px;
    border-radius: 100%;
    margin: 0 20px;
 }
@@ -24,18 +71,118 @@
    align-items: center;
    text-align: center;
    justify-content: center;
-   background-color: rgb(32, 32, 32);
-   height: 70dvh;
+   background-color: #181818;
+   height: 100dvh;
 
+}
+.title  { 
+    font-family: var(--font-heading);
+   color: #a3a660;
+}
+#main, #about, #services, #contact    { 
+
+   color: var(--secondary-color);
 }
 
 #description { 
     
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-family: var(--fuente-heading);
+   color: var(--secondary-color);
    font-size: 19px;
-
-
-
 
 }
 
+header.abajo{
+   background: #181818;
+   padding: 10px 15px;
+   
+ }
+
+ #main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
+   color: var(--primary-color);
+   transform: scale(1.1);
+   transition: 0.7s;
+   transition: translateY(2);
+ }
+ 
+ 
+ .row { 
+ 
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+ 
+ }
+ #heading { 
+ 
+  
+   font-size: 2.5rem;
+   font-family: "SodoSans-Black";
+   color: var(--secondary-color);
+ 
+ 
+ }
+ span { 
+   color: var(--primary-color);
+   font-family: "SodoSans-Light";
+ }  
+
+
+ .collapse { 
+ 
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.9rem;
+    font-family: var(--fuente-heading);
+    
+    
+   } 
+   .nav-item { 
+   
+     font-size: 2rem;
+     font-family: var(--fuente-heading);
+     color: var(--secondary-color);
+ 
+   }
+
+   @media only screen and (max-width: 991px ){ 
+      
+       .nav-menu { 
+    
+        
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 15px;
+         box-sizing: border-box;
+         background-color: var(--secondary-color);  
+       
+         
+    }  
+    .nav-burger-menu { 
+       list-style: none; 
+     
+     
+    
+    }  
+        
+     
+    
+       .menu-links { 
+           font-size: 1.9em;
+           font-family: "SodoSans-Black";
+            color: var(--fourth-color);      
+              padding: 18px;
+             text-decoration: none;
+             display: flex;
+            justify-content: center;
+             align-items: center;
+             text-align: center;
+             
+    
+    
+       } 
+       
+        
+    }

@@ -1,19 +1,18 @@
- //burger menu 
- document.addEventListener("DOMContentLoaded", function() {
-    // Obtener referencia al botón y al nav
-    let burgerMenu = document.querySelector("nav-menu");
-  
-  
-    // Función para alternar la visibilidad del nav
-    function toggleNav() {
-      if (burgerMenu.style.display === "none") {
-        burgerMenu.style.display = "block";
+
+//burger menu
+document.addEventListener('DOMContentLoaded', function() {
+  var navMenu = document.querySelector('.nav-menu');
+  var navbarToggler = document.querySelector('.navbar-toggler');
+
+  navMenu.style.display = 'none';
+
+  navbarToggler.addEventListener('click', function() {
+      if (navMenu.style.display === 'none') {
+          navMenu.style.display = 'block';
       } else {
-        burgerMenu.style.display = "none";
+          navMenu.style.display = 'none';
       }
-    }
-  
-    // Agregar un event listener al botón para llamar a la función toggleNav
-    burgerMenu.addEventListener("click", toggleNav);
   });
+});
+
  

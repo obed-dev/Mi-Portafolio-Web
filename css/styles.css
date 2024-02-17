@@ -51,7 +51,15 @@
 
 }
 
- 
+ #sub-title { 
+
+  display: flex;
+  font-family: var(--fuente-heading);
+  color: var(--fourth-color);
+  align-items: center;
+ justify-content: center;
+  padding: 4rem;
+ }
 
 #boton-color { 
 
@@ -186,3 +194,6 @@ header.abajo{
        
         
     }
+
+
+   

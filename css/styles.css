@@ -8,10 +8,10 @@
 :root {
    --primary-color: #a3a660;
    --secondary-color: #f1f2ce;
-   
+   --blue: #58ecff;
    --third-color: #8c5e35;
    --fourth-color: #572d14;
- 
+   --gradient: 181deg, #000000 35%, #2e006e 100%;
    --fuente-heading: "SodoSans-Black";
  }
  html {
@@ -42,7 +42,10 @@
           
           transition: 0.7s;
      }
-     
+  #nav { 
+
+   background-color: #181818;
+  }   
 
 
 .menu-links { 
@@ -81,6 +84,7 @@
    justify-content: center;
    background-color: #181818;
    height: 100dvh;
+   
 
 }
 .title  { 
@@ -107,7 +111,7 @@ header.abajo{
  }
 
  #main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
-   color: var(--primary-color);
+   color: var(----blue);
    transform: scale(1.1);
    transition: 0.7s;
    transition: translateY(2);
@@ -196,4 +200,90 @@ header.abajo{
     }
 
 
-   
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    #imagen-hero {
+      flex: 1;
+      
+    }
+    #imagen-hero img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+    #description {
+      flex: 1;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+     
+      }
+      #profile-photo {
+        margin-right: 0; /* Reinicia el margen en pantallas pequeñas */
+        margin-bottom: 2rem; /* Agrega un espacio entre la imagen y el texto en pantallas pequeñas */
+        
+      }
+    }
+
+    @media (min-width: 991px) {
+      .container {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         gap: 6rem;
+      }
+      
+    }
+
+    .scroll-up{
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: var(--secondary-color);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      opacity: 1;
+      transition: opacity 0.3s ease; /* Transición suave para opacity */
+    }
+    
+    .socicon {
+      width: 2rem;
+      height: 2rem;
+      background-color: white;
+      box-shadow: 1px 1px 1px;
+      border-radius: 10px 10px 10px;
+      z-index: 10;
+      
+    }
+
+    #gif-vlog { 
+     
+     
+        width: 50px;
+        border-radius: 50%;
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+
+
+    }
+    .vlog  { 
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      
+    }

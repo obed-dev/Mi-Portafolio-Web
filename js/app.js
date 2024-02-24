@@ -67,3 +67,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Iniciar el intervalo inicial
     interval = setInterval(mostrarTextoLetraPorLetra, speed);
 });
+
+

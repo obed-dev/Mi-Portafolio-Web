@@ -6,13 +6,15 @@
 
 }
 :root {
-   --primary-color: #a3a660;
+   --primary-color: #EEEEE6;
    --secondary-color: #f1f2ce;
    --blue: #58ecff;
    --third-color: #8c5e35;
    --fourth-color: #572d14;
-   --gradient: 181deg, #000000 35%, #2e006e 100%;
-   --fuente-heading: "SodoSans-Black";
+   --background: #010101;
+   --background: linear-gradient(180deg, #010101, #070027);
+   --fuente-heading: "Montserrat,sans-serif";
+   --gray-dark: #344137
  }
  html {
  
@@ -26,7 +28,11 @@
        padding: 0;
        box-sizing: border-box;
  }
- 
+ #title-desc { 
+  color: var(--background2-colour);
+  font-family: var(--font-heading);
+  font-size: 2rem;
+ }
  
  span { 
     
@@ -44,7 +50,7 @@
      }
   #nav { 
 
-   background-color: #181818;
+  background: #010101;
   }   
 
 
@@ -55,14 +61,15 @@
 }
 
 
- #sub-title { 
+ #vlog-title { 
 
   display: flex;
   font-family: var(--fuente-heading);
-  color: var(--third-color);
+  color: var(--primary-color);
   align-items: center;
  justify-content: center;
-  padding: 2rem;
+  padding: 5rem;
+ 
  }
 
 #boton-color { 
@@ -83,27 +90,94 @@
    align-items: center;
    text-align: center;
    justify-content: center;
-   background-color: #181818;
+   background: #010101;
+   background: linear-gradient(180deg, #010101, #070027);
+  
    height: 100dvh;
    
 
 }
 .title  { 
     font-family: var(--font-heading);
-   color: #a3a660;
+   color: var(--primary-color);
 }
 #main, #about, #services, #contact    { 
 
-   color: var(--secondary-color);
+   color: var(--primary-color);
 }
 
-#description { 
+#desc { 
     
    font-family: var(--fuente-heading);
-   color: var(--secondary-color);
-   font-size: 17px;
+   color: var(--background);
+   font-size: 19px;
 
 }
+
+#about-me { 
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: row;
+     height: 100dvh;
+     gap: 10rem;
+
+}
+
+@media only screen and (min-width: 991px ) {
+  #about-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100dvh;
+    gap: 8rem;
+  }
+    #image-about-me { 
+
+      display: flex;
+       justify-content: space-between;
+       padding: 20px;
+        
+    
+    }
+    
+    #info-about-me { 
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    
+    }
+}
+
+@media only screen and (max-width: 768px ) {
+  #about-me { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100dvh;
+    gap: 6rem;
+  }
+    #image-about-me { 
+
+      display: flex;
+      width: fit-content;
+       justify-content: space-between;
+       padding: 20px;
+        
+    
+    }
+    
+    #info-about-me { 
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    
+    }
+}
+
+
 
 header.abajo{
    background: #181818;
@@ -112,7 +186,7 @@ header.abajo{
  }
 
  #main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
-   color: var(--primary-color);
+   color: var(--blue);
    transform: scale(1.1);
    transition: 0.7s;
    transition: translateY(2);
@@ -132,12 +206,12 @@ header.abajo{
   
    font-size: 2rem;
    font-family: "SodoSans-Black";
-   color: var(--secondary-color);
+   color: var(--primary-color);
  
  
  }
  span { 
-   color: var(--primary-color);
+   color: var(--blue);
    font-family: "SodoSans-Light";
  }  
 
@@ -277,6 +351,7 @@ header.abajo{
         width: 60px;
         border-radius: 50%;
         
+        
       
 
 
@@ -288,3 +363,50 @@ header.abajo{
       align-items: center;
       
     }
+
+    #btn { 
+        width: 10rem;
+
+    }
+
+    .custom-shape-divider-bottom-1708801360 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1708801360 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 121px;
+  }
+  
+  .custom-shape-divider-bottom-1708801360 .shape-fill {
+      fill: #FFFFFF;
+  }
+
+  .custom-shape-divider-bottom-1708804418 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1708804418 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1708804418 .shape-fill {
+    fill: #ffffff;
+}

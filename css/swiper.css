@@ -6,11 +6,12 @@
   
   /*=============== CARD ===============*/
   .contenedor {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 70vh;
-    background-color: #f1f2ce;
+    background: linear-gradient(180deg, #010101, #070027);
    
   }
 

@@ -54,14 +54,15 @@
 
 }
 
+
  #sub-title { 
 
   display: flex;
   font-family: var(--fuente-heading);
-  color: var(--fourth-color);
+  color: var(--third-color);
   align-items: center;
  justify-content: center;
-  padding: 4rem;
+  padding: 2rem;
  }
 
 #boton-color { 
@@ -100,7 +101,7 @@
     
    font-family: var(--fuente-heading);
    color: var(--secondary-color);
-   font-size: 19px;
+   font-size: 17px;
 
 }
 
@@ -111,7 +112,7 @@ header.abajo{
  }
 
  #main:hover, #about:hover, #services:hover, #contact:hover , .menu-links:hover {
-   color: var(----blue);
+   color: var(--primary-color);
    transform: scale(1.1);
    transition: 0.7s;
    transition: translateY(2);
@@ -129,7 +130,7 @@ header.abajo{
  #heading { 
  
   
-   font-size: 2.5rem;
+   font-size: 2rem;
    font-family: "SodoSans-Black";
    color: var(--secondary-color);
  
@@ -273,10 +274,10 @@ header.abajo{
     #gif-vlog { 
      
      
-        width: 50px;
+        width: 60px;
         border-radius: 50%;
-        filter: brightness(1.1);
-        mix-blend-mode: multiply;
+        
+      
 
 
     }

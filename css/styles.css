@@ -51,6 +51,7 @@
   #nav { 
 
   background: #010101;
+  padding: 20px;
   }   
 
 
@@ -119,8 +120,9 @@
      align-items: center;
      justify-content: center;
      flex-direction: row;
-     height: 100dvh;
+     height: 80dvh;
      gap: 10rem;
+     padding: 20px;
 
 }
 
@@ -348,13 +350,10 @@ header.abajo{
     #gif-vlog { 
      
      
-        width: 60px;
+        width: 100px;
+        height: 80px;
         border-radius: 50%;
-        
-        
-      
-
-
+    
     }
     .vlog  { 
       display: flex;

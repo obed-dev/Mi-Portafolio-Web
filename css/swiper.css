@@ -10,13 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     background: linear-gradient(180deg, #010101, #070027);
    
   }
 
 .card__container {
     padding-block: 2.5rem;
+    height: 70vh;
   }
   
   .card__content {

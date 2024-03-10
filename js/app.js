@@ -183,18 +183,17 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
             div.textContent += text[index];
             index++;
         } else {
-            clearInterval(interval); // Detener la ejecución continua
+            clearInterval(interval); // stop the timer
             setTimeout(function() {
-                div.textContent = ""; // Limpiar el contenido del div
-                index = 0; // Reiniciar el índice
+                div.textContent = ""; // clean the content in the div
+                index = 0; // restart index
                 interval = setInterval(mostrarTextoLetraPorLetra, speed);
-            }, 5000); // Esperar 5 segundos antes de reiniciar
+            }, 5000); // wait 5 seconds before start
         }
     }
 
-    // Iniciar el intervalo inicial
+  
     interval = setInterval(mostrarTextoLetraPorLetra, speed);
 });
-
 
 

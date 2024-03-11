@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.getElementById("services").addEventListener("click", function(e) {
   e.preventDefault();
 
-  let destino = document.getElementById("skills-scroll");
+  let destino = document.getElementById("portfolio");
   let destinoPosicion = destino.offsetTop;
   let posicionAjustada = destinoPosicion - 95;
 
@@ -111,7 +111,7 @@ document.getElementById("about-burger").addEventListener("click", (e) => {
 
 document.getElementById("skills").addEventListener("click", (e) => { 
   e.preventDefault();
- let about  = document.getElementById("skills-scroll");
+ let about  = document.getElementById("portfolio");
  let destinyPosition = about.offsetTop;
  let destinyFixed = destinyPosition -95 ;
 

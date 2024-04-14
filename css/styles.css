@@ -5,6 +5,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   
 
 
 }
@@ -23,6 +24,7 @@
  
 
    scroll-behavior: smooth;
+   
  }
  
  body { 
@@ -30,6 +32,7 @@
        margin: 0;
        padding: 0;
        box-sizing: border-box;
+     
  }
  #title-desc { 
   color: var(--background2-colour);
@@ -350,6 +353,16 @@ header.abajo{
       z-index: 10;
       
     }
+    .socicon:hover {
+      width: 2rem;
+      height: 2rem;
+      background-color: white;
+      box-shadow: 1px 1px 1px;
+      border-radius: 10px 10px 10px;
+      z-index: 10;
+      transform: scale(1.3);
+      transition: all 400ms ease-in-out;
+    }
 
    
 
@@ -527,3 +540,62 @@ height: 5dvh;
 
 }
 
+footer { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  padding: 20px;
+  
+ 
+}
+.container { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10dvh;
+  
+  
+}
+
+
+.icons__footer { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+}
+
+.icons__footer:hover  { 
+  transform: scale(1.2);
+  transition: all 400ms ease-in-out;
+
+} 
+
+#button__projects:hover  { 
+  transform: scale(1.1);
+  transition: all 400ms ease-in-out;
+
+} 
+
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: linear-gradient(rgb(1, 1, 1), rgb(7, 0, 39));
+  }
+  
+  #bg canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+
+ 

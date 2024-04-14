@@ -82,8 +82,12 @@
 
 #boton-color { 
 
-   background-color: var(--secondary-color);
+   background-color: var(--blue);
+  height: 38px;
+ 
 }
+
+
 
  #profile-photo {
    width: 250px;
@@ -126,6 +130,7 @@
      display: flex;
      align-items: center;
      justify-content: center;
+     position: relative;
      flex-direction: row;
      height: 80dvh;
      gap: 10rem;
@@ -243,7 +248,23 @@ header.abajo{
    }
 
    @media only screen and (max-width: 991px ){ 
-      
+    .panel { 
+      position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    text-align: center;
+    z-index: 997;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    
+    transition: transform .3s ease;
+    transform: translate(100%);
+    margin-top: 10dvh;
+    }  
+
+
        .nav-menu { 
     
         
@@ -252,8 +273,10 @@ header.abajo{
          align-items: center;
          padding: 15px;
          box-sizing: border-box;
-         background-color: var(--secondary-color);  
-       
+         
+         transform: translate(0);
+         box-shadow: 0 8px 32px #1f26875e;
+         
          
     }  
     .nav-burger-menu { 
@@ -275,6 +298,7 @@ header.abajo{
             justify-content: center;
              align-items: center;
              text-align: center;
+             color: var(--blue);
              
     
     
@@ -371,30 +395,13 @@ header.abajo{
 
     }
 
-    .custom-shape-divider-bottom-1708801360 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-      transform: rotate(180deg);
-  }
-  
-  .custom-shape-divider-bottom-1708801360 svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 121px;
-  }
-  
-  .custom-shape-divider-bottom-1708801360 .shape-fill {
-      fill: #FFFFFF;
-  }
+    
 
   
 .container__card { 
-  padding: 2rem;
+  position: relative;
+ padding: 30px 20px;
+
   background: var(--background);
 }
 
@@ -490,6 +497,7 @@ header.abajo{
    align-items: center;
    height: 40px;
    padding: 5.5rem;
+   margin-bottom: 9rem;
  
   
 
@@ -527,6 +535,7 @@ footer {
   align-items: center;
   background: var(--primary-color);
   padding: 20px;
+  background-color: #fff;
   
  
 }
@@ -561,3 +570,62 @@ footer {
 } 
 
 
+
+
+.custom-shape-divider-bottom-1713128554 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713128554 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 191px;
+}
+
+.custom-shape-divider-bottom-1713128554 .shape-fill {
+  fill: #FFFFFF;
+}
+
+
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1713128554 svg {
+      width: calc(100% + 1.3px);
+      height: 95px;
+  }
+}
+
+.custom-shape-divider-bottom-1713129057 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1713129057 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 191px;
+}
+
+.custom-shape-divider-bottom-1713129057 .shape-fill {
+  fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+  .custom-shape-divider-bottom-1713129057 svg {
+      width: calc(100% + 1.3px);
+      height: 107px;
+  }
+}

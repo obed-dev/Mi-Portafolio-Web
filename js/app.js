@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //scroll up button
 document.addEventListener("DOMContentLoaded", function() {
+
     let scrollUp = document.getElementById("scroll-up");
     
     scrollUp.addEventListener("click", function() {
@@ -172,7 +173,7 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
 
   //hero function
   document.addEventListener("DOMContentLoaded", function() {
-    const text = "<Full Stack Web Developer>";
+    const text = "<Full Stack Web Developer/>";
     const speed = 100;
     const div = document.getElementById("text");
     let index = 0;

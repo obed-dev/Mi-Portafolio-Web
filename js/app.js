@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  //scroll btn main homepage 
-  document.getElementById("about").addEventListener("click", function(e) {
+  //scroll btn menu main 
+  document.getElementById("main").addEventListener("click", function(e) {
     e.preventDefault();
 
     let destino = document.getElementById("about-me");
@@ -63,7 +63,7 @@ document.getElementById("services").addEventListener("click", function(e) {
 document.getElementById("contact").addEventListener("click", function(e) {
   e.preventDefault();
 
-  let destino = document.getElementById("");
+  let destino = document.getElementByClass("container");
   let destinoPosicion = destino.offsetTop;
   let posicionAjustada = destinoPosicion - 95;
 
@@ -74,7 +74,7 @@ document.getElementById("contact").addEventListener("click", function(e) {
 });
 
 
-//btn scroll burger menu
+//scroll burger menu
 document.getElementById("home").addEventListener("click", (e) => { 
   e.preventDefault();
  let about  = document.querySelector(".hero");

@@ -162,7 +162,7 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
   
     if (scrollPosition > 100) {
       scrollUp.style.opacity = "1";
-    } else {
+    } else  {
      scrollUp.style.opacity = "0";
     }
   });

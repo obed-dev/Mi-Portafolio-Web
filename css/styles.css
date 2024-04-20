@@ -30,8 +30,7 @@
  
  body { 
  
-       margin: 0;
-       padding: 0;
+    
        box-sizing: border-box;
      
  }  
@@ -100,136 +99,57 @@
    border-radius: 100%;
    margin: 0 20px;
 }
-
-.hero { 
-
-   display: flex;
-   align-items: center;
-   text-align: center;
-   justify-content: center;
-   background: #010101;
-   background: linear-gradient(180deg, #010101, #070027);
-  
-   height: 100dvh;
-   
-
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #010101, #070027);
+  height: 100vh;
 }
-.text__hero { 
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   width: 70dvh;
-  
- 
-}
-@media only screen and (min-width: 992px) {
-  .text__hero { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-   
-  
- }
 
- #text { 
+.text__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#text {
   color: #00ffff;
   font-size: 1.9em;
-  filter: drop-shadow(0 0px 5px rgba(0, 230, 270, 2))
-    
-    
-  }
-
-
-  .title  { 
-    padding: 10px;
-    font-family: "Fira Code", monospace;
-   color: var(--primary-color);
-   font-size: 3em;
-   
+  filter: drop-shadow(0 0px 5px rgba(0, 230, 270, 2));
 }
 
+.title {
+  padding: 10px;
+  font-family: "Fira Code", monospace;
+  color: var(--primary-color);
 }
-
 
 @media only screen and (max-width: 992px) {
-  .text__hero { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-   
-  
- }
-
- #text { 
-  color: #00ffff;
-  font-size: 25px;
-  
-    
-    
+  #text {
+    font-size: 18px;
   }
 
-
-  .title  { 
-    padding: 10px;
-    font-family: "Fira Code", monospace;
-   color: var(--primary-color);
-
+  .title {
+    font-size: 1.7em;
+  }
 }
-}
-
-
-
 
 @media only screen and (max-width: 768px) {
-  .text__hero { 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100%;
-   
-  
- }
-
- #text { 
-  color: #00ffff;
-  font-size: 1.3em;
-    
-    
+  #text {
+    font-size: 1.3em;
   }
 
-
-  .title  { 
-    padding: 10px;
-    font-family: "Fira Code", monospace;
-   color: var(--primary-color);
-}
-
+  .title {
+    font-size: 1.5em;
+  }
 }
 
 
 
 
-
-
-
-#text { 
-color: #00ffff;
-
-  
-  
-}
-
-.title  { 
-    padding: 10px;
-    font-family: "Fira Code", monospace;
-   color: var(--primary-color);
-}
 
 .nav-link:hover    { 
 
@@ -934,3 +854,4 @@ margin-top: 5px;
 .icons:hover { 
 scale: 1.2;
 }
+

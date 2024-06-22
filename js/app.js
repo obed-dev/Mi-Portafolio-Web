@@ -2,7 +2,7 @@
 //burger menu
 document.addEventListener('DOMContentLoaded', function() {
   let navMenu = document.querySelector('.nav-menu');
-  let navbarToggler = document.querySelector('.navbar-toggler');
+  let navbarToggler = document.querySelector('.container-button');
 
   navMenu.style.display = 'none';
 
@@ -32,7 +32,26 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  //scroll btn menu main 
+
+//scroll top
+window.addEventListener("scroll", function() {
+  let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  let scrollUp = document.getElementById("scroll-up");
+
+  if (scrollPosition > 100) {
+    scrollUp.style.opacity = "1";
+  } else  {
+   scrollUp.style.opacity = "0";
+  }
+});
+
+
+
+
+
+
+  //navigation btn menu main 
   document.getElementById("main").addEventListener("click", function(e) {
     e.preventDefault();
 
@@ -74,7 +93,9 @@ document.getElementById("contact").addEventListener("click", function(e) {
 });
 
 
-//scroll burger menu
+
+
+//navigation burger menu responsive
 document.getElementById("home").addEventListener("click", (e) => { 
   e.preventDefault();
  let about  = document.querySelector(".hero");
@@ -148,29 +169,6 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
 
 
 
-
-
-
-
-
-
-//btn scroll top
-  window.addEventListener("scroll", function() {
-    let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  
-    let scrollUp = document.getElementById("scroll-up");
-  
-    if (scrollPosition > 100) {
-      scrollUp.style.opacity = "1";
-    } else  {
-     scrollUp.style.opacity = "0";
-    }
-  });
-
-
-
-
-
   //hero function
   document.addEventListener("DOMContentLoaded", function() {
     const text = "<Full Stack Web Developer/>";
@@ -198,3 +196,20 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
 });
 
 
+
+
+//change button responsive menu
+document.getElementById('containerButton').addEventListener('click', function(event) {
+  // Verifica si el clic fue en el contenedor de botones y no en un enlace
+  if (!event.target.closest('.menu-links')) {
+    this.classList.toggle("change");
+  }
+});
+
+// Agrega un event listener a cada enlace en el menú de navegación
+document.querySelectorAll('.menu-links').forEach(function(link) {
+  link.addEventListener('click', function() {
+    // Remueve la clase 'change' del contenedor de botones cuando se hace clic en un enlace
+    document.getElementById('containerButton').classList.remove('change');
+  });
+});

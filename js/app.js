@@ -200,16 +200,16 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
 
 //change button responsive menu
 document.getElementById('containerButton').addEventListener('click', function(event) {
-  // Verifica si el clic fue en el contenedor de botones y no en un enlace
+
   if (!event.target.closest('.menu-links')) {
     this.classList.toggle("change");
   }
 });
 
-// Agrega un event listener a cada enlace en el menú de navegación
+
 document.querySelectorAll('.menu-links').forEach(function(link) {
   link.addEventListener('click', function() {
-    // Remueve la clase 'change' del contenedor de botones cuando se hace clic en un enlace
+
     document.getElementById('containerButton').classList.remove('change');
   });
 });

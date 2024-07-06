@@ -112,13 +112,14 @@
 
 #text {
   color: #00ffff;
-  font-size: 1.9em;
+  font-size: 1.7em;
   filter: drop-shadow(0 0px 5px rgba(0, 230, 270, 2));
 }
 
 .title {
   padding: 10px;
   font-family: "Fira Code", monospace;
+  font-size: 2.8em;
   color: var(--primary-color);
 }
 
@@ -128,7 +129,7 @@
   }
 
   .title {
-    font-size: 1.7em;
+    font-size: 2em;
   }
 }
 
@@ -138,7 +139,7 @@
   }
 
   .title {
-    font-size: 1.5em;
+    font-size: 1.9em;
   }
 }
 
@@ -398,6 +399,7 @@ header.abajo{
       flex-direction: row;
       justify-content: center;
       align-items: center;
+      flex-wrap: nowrap;
       
     }
     #imagen-hero {
@@ -776,10 +778,10 @@ padding: 15px;
 
 .image__hero { 
 
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
- margin: 30px;
+ margin-bottom: 70px;
 }
 @media only screen and (min-width: 991px) {
   .nav-burger-menu{ 
@@ -929,3 +931,11 @@ scale: 1.2;
 
 
 }
+
+
+
+.animate__animated .animate__fadeInUp  { 
+  animation-duration: 5s;
+  animation-delay: 5s;
+}
+

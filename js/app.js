@@ -213,3 +213,36 @@ document.querySelectorAll('.menu-links').forEach(function(link) {
     document.getElementById('containerButton').classList.remove('change');
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicia ScrollReveal
+  var sr = ScrollReveal({
+    reset: true // Ajusta esto a true para que las animaciones se repitan al hacer scroll hacia arriba y hacia abajo
+});
+
+  // Configura las animaciones para los diferentes selectores
+  sr.reveal(".image__hero", {
+      duration: 2500,
+      origin: "top",
+      distance: '400px'
+  });
+
+  sr.reveal(".col-md-6", {
+      duration: 4000,
+      origin: "left",
+      distance: '400px'
+  });
+
+  sr.reveal(".container-card", {
+      duration: 3000,
+      origin: "bottom",
+      distance: '400px'
+  });
+
+  
+ 
+});
+
+

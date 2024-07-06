@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let navMenu = document.querySelector('.nav-menu');
   let navbarToggler = document.querySelector('.container-button');
 
-  navMenu.style.display = 'none';
-
+ navMenu.style.display = "none";
   navbarToggler.addEventListener('click', function() {
       if (navMenu.style.display === 'none') {
           navMenu.style.display = 'block';

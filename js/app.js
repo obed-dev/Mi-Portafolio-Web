@@ -219,11 +219,11 @@ document.addEventListener("DOMContentLoaded", function() {
  
   // Inicia ScrollReveal
   let sr = ScrollReveal({
-    reset: false // Ajusta esto a true para que las animaciones se repitan al hacer scroll hacia arriba y hacia abajo
+    reset: true // Ajusta esto a true para que las animaciones se repitan al hacer scroll hacia arriba y hacia abajo
 });
 
   
-  sr.reveal(".image__hero", {
+  sr.reveal(".icons", {
       duration: 2500,
       origin: "top",
       distance: '400px'

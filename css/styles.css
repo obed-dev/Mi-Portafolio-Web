@@ -716,7 +716,7 @@ height: 5dvh;
 
 
 .slider {
-  width: 75vw;
+  width: 90vw;
   height: auto;
   margin: auto;
   padding: 25px;
@@ -726,7 +726,7 @@ height: 5dvh;
 .slider .slide-track {
   display: flex;
   animation: scroll 40s linear infinite;
-  -webkit-animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 17s linear infinite;
   width: calc(200px * 10);
 }
 

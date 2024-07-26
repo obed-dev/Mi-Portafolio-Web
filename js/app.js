@@ -4,13 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
   let navMenu = document.querySelector('.nav-menu');
   let navbarToggler = document.querySelector('.container-button');
 
- navMenu.style.display = "none";
+  navMenu.style.display = "none";
   navbarToggler.addEventListener('click', function() {
-      if (navMenu.style.display === 'none') {
-          navMenu.style.display = 'block';
-      } else {
-          navMenu.style.display = 'none';
-      }
+    if (navMenu.style.display === 'none') {
+      navMenu.classList.remove('fade-out');
+      navMenu.style.display = 'block';
+      setTimeout(() => {
+        navMenu.classList.add('fade-in');
+      }, 10); // Pequeño retraso para permitir que se aplique el cambio de display
+    } else {
+      navMenu.classList.remove('fade-in');
+      navMenu.classList.add('fade-out');
+      setTimeout(() => {
+        navMenu.style.display = "none";
+      }, 500); // Ajusta el tiempo según la duración de la transición
+    }
   });
 });
 
@@ -244,5 +252,28 @@ document.addEventListener("DOMContentLoaded", function() {
   
  
 });
+
+
+function fadeOutClick() {
+
+ 
+
+
+  let heading = document.getElementById('heading');
+  
+
+  if (heading.classList.contains('fade-out')   ) {
+      heading.classList.remove('fade-out');
+      
+      heading.classList.add('fade-in');
+      
+  } else {
+      heading.classList.remove('fade-in');
+      heading.classList.add('fade-out');
+      
+  }
+ 
+}
+
 
 

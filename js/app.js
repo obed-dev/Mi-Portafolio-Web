@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-//scroll up button
+//scroll up 
 document.addEventListener("DOMContentLoaded", function() {
 
     let scrollUp = document.getElementById("scroll-up");
@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-//scroll top
+//show scroll button
 window.addEventListener("scroll", function() {
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
@@ -78,7 +78,7 @@ document.getElementById("services").addEventListener("click", function(e) {
 
   let destino = document.getElementById("portfolio");
   let destinoPosicion = destino.offsetTop;
-  let posicionAjustada = destinoPosicion - 95;
+  let posicionAjustada = destinoPosicion - 80;
 
   window.scrollTo({
       top: posicionAjustada,
@@ -89,7 +89,7 @@ document.getElementById("services").addEventListener("click", function(e) {
 document.getElementById("contact").addEventListener("click", function(e) {
   e.preventDefault();
 
-  let destino = document.getElementByClass("container");
+  let destino = document.getElementById("footer");
   let destinoPosicion = destino.offsetTop;
   let posicionAjustada = destinoPosicion - 95;
 
@@ -112,6 +112,8 @@ document.getElementById("home").addEventListener("click", (e) => {
  let navMenu = document.querySelector('.nav-menu');// this is only to dissapear the burger menu after the event click
  navMenu.style.display = 'none';
 
+ heading.classList.add('fade-in');
+
  window.scrollTo({
       top: destinyFixed,
       behavior: "smooth"
@@ -130,6 +132,8 @@ document.getElementById("about-burger").addEventListener("click", (e) => {
  let navMenu = document.querySelector('.nav-menu');// this is only to dissapear the burger menu after the event click
  navMenu.style.display = 'none';
 
+ heading.classList.add('fade-in');
+
  window.scrollTo({
       top: destinyFixed,
       behavior: "smooth"
@@ -142,10 +146,12 @@ document.getElementById("skills").addEventListener("click", (e) => {
   e.preventDefault();
  let about  = document.getElementById("portfolio");
  let destinyPosition = about.offsetTop;
- let destinyFixed = destinyPosition -95 ;
+ let destinyFixed = destinyPosition - 75 ;
 
  let navMenu = document.querySelector('.nav-menu');// this is only to dissapear the burger menu after the event click
   navMenu.style.display = 'none';
+
+  heading.classList.add('fade-in');
 
  window.scrollTo({
       top: destinyFixed,
@@ -156,12 +162,14 @@ document.getElementById("skills").addEventListener("click", (e) => {
 
 document.getElementById("contact-me").addEventListener("click", (e) => { 
   e.preventDefault();
- let about  = document.getElementById("");
+ let about  = document.getElementById("footer");
  let destinyPosition = about.offsetTop;
  let destinyFixed = destinyPosition -95 ;
 
  let navMenu = document.querySelector('.nav-menu'); // this is only to dissapear the burger menu after the event click
  navMenu.style.display = 'none';
+
+ heading.classList.add('fade-in');
 
  window.scrollTo({
       top: destinyFixed,
@@ -222,7 +230,7 @@ document.querySelectorAll('.menu-links').forEach(function(link) {
 });
 
 
-
+//scroll reveal
 document.addEventListener("DOMContentLoaded", function() {
  
   // Inicia ScrollReveal
@@ -253,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function() {
  
 });
 
-
+//function to smooth burger menu display
 function fadeOutClick() {
 
  

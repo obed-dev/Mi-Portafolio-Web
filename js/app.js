@@ -146,7 +146,7 @@ document.getElementById("skills").addEventListener("click", (e) => {
   e.preventDefault();
  let about  = document.getElementById("portfolio");
  let destinyPosition = about.offsetTop;
- let destinyFixed = destinyPosition - 75 ;
+ let destinyFixed = destinyPosition - 90 ;
 
  let navMenu = document.querySelector('.nav-menu');// this is only to dissapear the burger menu after the event click
   navMenu.style.display = 'none';

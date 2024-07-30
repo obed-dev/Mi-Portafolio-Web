@@ -762,7 +762,7 @@ padding: 15px;
  
   border-radius: 10%;
 
-  width: 80%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -1137,4 +1137,42 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--blue-terminal);    /* color of the scroll thumb */
   border-radius: 20px;       /* roundness of the scroll thumb */
   border: 3px solid var(--blue-terminal);  /* creates padding around scroll thumb */
+}
+
+
+
+/* Estilos para modo landscape */
+/* Estilos generales */
+
+
+/* Estilos para modo landscape con dimensiones específicas */
+@media only screen and (max-width: 848px) and (max-height: 670px) and (orientation: landscape) {
+  .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .image__hero {
+      flex-direction: row;
+      width: 60%;
+     
+  }
+
+  .text__hero {
+      width: 50%;
+      text-align: left;
+  }
+
+  .text__hero .title {
+      font-size: 2em;
+  }
+  #text { 
+    font-size: 1.2em;
+  }
+  #profile-photo {
+      width: 120px;
+      height: auto;
+  }
 }

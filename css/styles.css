@@ -1140,11 +1140,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
-/* Estilos para modo landscape */
-/* Estilos generales */
-
-
 /* Estilos para modo landscape con dimensiones específicas */
 @media only screen and (max-width: 848px) and (max-height: 670px) and (orientation: landscape) {
   .container {
@@ -1175,4 +1170,15 @@ body::-webkit-scrollbar-thumb {
       width: 120px;
       height: auto;
   }
+
+  .shape-divider { 
+
+    display: none;
+  }
+.custom-shape-divider-bottom-1718687655 { 
+  
+  margin-top: 20rem;
+}
+
+  
 }

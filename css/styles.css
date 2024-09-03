@@ -89,7 +89,7 @@
 
 
  #profile-photo {
-   width: 300px;
+   width: 290px;
    height: 300px;
    border-radius: 100%;
    margin: 0 20px;
@@ -205,7 +205,7 @@
        justify-content: space-between;
        height: 45dvh;
        margin-bottom: 20px;
-       border-radius: 10%;
+       border-radius: 50%;
     
     
     }
@@ -244,7 +244,7 @@
        justify-content: space-between;
        height: 45dvh;
        margin-bottom: 20px;
-       border-radius: 10%;
+       border-radius: 50%;
     
     }
     
@@ -283,7 +283,7 @@
 
        height: 40dvh;
        margin-bottom: 20px;
-       border-radius: 10%;
+       border-radius: 50%;
     
     }
     
@@ -1043,7 +1043,7 @@ margin-top: 5px;
   #profile-photo {
     margin-right: 0; /* Reset margin on small screens */
     margin-bottom: 1rem; /* Add space between image and text on small screens */
-    width: 300px; /* Adjust width for mobile */
+    width: 290px; /* Adjust width for mobile */
     height: auto;
   }
   
@@ -1061,8 +1061,8 @@ margin-top: 5px;
   }
 
   #github-icon {
-    margin-top: 2rem;
-    left: -100px; /* Adjust this value as needed */
+    
+    left: -120px; /* Adjust this value as needed */
   }
 
   #linkedin-icon {
@@ -1085,7 +1085,7 @@ margin-top: 5px;
   }
 
   #github-icon {
-    left: -100px; /* Adjust this value as needed */
+    left: -120px; /* Adjust this value as needed */
   }
 
   #linkedin-icon {

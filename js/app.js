@@ -1,6 +1,7 @@
 
 //burger menu
 document.addEventListener('DOMContentLoaded', function() {
+  
   let navMenu = document.querySelector('.nav-menu');
   let navbarToggler = document.querySelector('.container-button');
 
@@ -42,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //show scroll button
 window.addEventListener("scroll", function() {
+  
   let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
   let scrollUp = document.getElementById("scroll-up");
@@ -186,6 +188,7 @@ document.getElementById("contact-me").addEventListener("click", (e) => {
 
   //hero function
   document.addEventListener("DOMContentLoaded", function() {
+    
     const text = "<Full Stack Web Developer/>";
     const speed = 100;
     const div = document.getElementById("text");

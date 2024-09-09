@@ -1217,11 +1217,11 @@ body::-webkit-scrollbar-thumb {
   }
 
   #github-icon {
-    left: 50px; /* Adjust this value as needed */
+    left: 20px; /* Adjust this value as needed */
   }
 
   #linkedin-icon {
-    right: 45px; /* Adjust this value as needed */
+    right: 10px; /* Adjust this value as needed */
   }
 
 
@@ -1254,5 +1254,17 @@ body::-webkit-scrollbar-thumb {
     align-items: start;
  
 } 
+
+#about-container {
+  background: rgb(11 0 37);
+  border-radius: 10px;
+  padding: 30px;
+  max-width: 600px;
+  
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+}
+
 }
 

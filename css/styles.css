@@ -35,15 +35,6 @@
  }  
 
 
-
-
- 
- 
- span { 
-    
-     color: var(--secondary-color);
- }
- 
  header {
    position: fixed;
    top: 0;
@@ -350,11 +341,7 @@ header.abajo{
  
  
  }
- span { 
-   color: var(--blue);
-   font-family: "SodoSans-Light";
- }  
-
+ 
 
  .collapse { 
  
@@ -1301,9 +1288,18 @@ body::-webkit-scrollbar-thumb {
     transition: height 0.5s;
       background: var(--background);
   }
+  
 }
 
-
+@media only screen and (max-width: 949px ) and (min-width: 769px  )and (orientation: portrait) {
+   span { 
+    display: none;
+   }
+}
+span { 
+  color: #00ffff;
+  font-family: 'Courier New', Courier, monospace;
+}
 
 .card__title {
     margin: 0;

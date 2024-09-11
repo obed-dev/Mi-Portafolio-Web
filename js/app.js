@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+ 
+
+
 
 //show scroll button
 window.addEventListener("scroll", function() {
@@ -259,7 +262,7 @@ document.addEventListener("DOMContentLoaded", function() {
       origin: "bottom",
       distance: '400px'
   });
-
+   
   
  
 });

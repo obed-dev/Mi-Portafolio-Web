@@ -1088,7 +1088,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Estilos para modo landscape con dimensiones específicas */
-@media only screen and (max-width: 848px) and (max-height: 670px) and (orientation: landscape) {
+@media only screen and (max-width: 948px) and (max-height: 670px) and (orientation: landscape) {
   
   .container {
       display: flex;

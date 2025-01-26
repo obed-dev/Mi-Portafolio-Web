@@ -832,6 +832,8 @@ margin-top: 5px;
     transition: all 0.5s ease;
     animation: flotar 3s ease-in-out infinite;
   }
+
+  
 }
 
 
@@ -1447,4 +1449,20 @@ span {
  color: var(--primary-color);
  padding: 1rem;
 
+}
+
+@media screen and (max-width: 768px) {
+  
+    #footer {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      text-align: center;
+     margin-top: 5rem;
+     color: var(--primary-color);
+     padding: 1rem;
+    
+   
+  }
+  
 }

@@ -174,6 +174,7 @@
      object-fit: cover;
      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
      
+     
   
   }
 
@@ -181,7 +182,7 @@
     transform: scale(1.1);
    transition: 0.7s;
    transition: translateY(2);
-    border: 2px solid var(--blue-terminal);
+  
    }
   
   #about-me {
@@ -199,6 +200,7 @@
     max-width: 800px;
     width: 100%;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    
     
   }
   
@@ -542,7 +544,7 @@ header.abajo{
 	padding: 40px;
 	margin-top: 20px;
   text-align: center;
-	color: var(--primary-color);
+	color: var(--background);
   font-size: 2.5rem;
   
 }
@@ -669,7 +671,7 @@ header.abajo{
 }
 
 .custom-shape-divider-bottom-1713129057 .shape-fill {
-  fill: #FFFFFF;
+  fill: linear-gradient(180deg, #010101, #070027);
 }
 
 
@@ -770,12 +772,7 @@ padding: 15px;
 }
 
 
-footer {
 
-  
-  padding: 20px 0;
-  text-align: center;
-}
 
 .container {
   display: flex;
@@ -796,11 +793,11 @@ footer {
 
 margin-top: 5px;
  transition: all 0.5s ease;
- 
-
- mix-blend-mode: multiply;
  filter: brightness(1.1);
 }
+ 
+
+
 
 .icons__footer:hover {
   transform: scale(1.2);
@@ -814,9 +811,10 @@ margin-top: 5px;
 #footer {
   display: flex;
   align-items: center;
- 
- background-color: #fff;
-
+  padding: 20px 0;
+  text-align: center;
+ margin-top: 15rem;
+ color: var(--primary-color);
  padding: 1rem;
 
 }
@@ -904,6 +902,11 @@ margin-top: 5px;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    fill: var(--primary-color);
+}
+
+.custom-shape-divider-bottom-1718687655 .shape-fill {
+  fill: #FFFFFF;
 }
 
 .custom-shape-divider-bottom-1718687655 svg {
@@ -913,9 +916,7 @@ margin-top: 5px;
     height: 141px;
 }
 
-.custom-shape-divider-bottom-1718687655 .shape-fill {
-    fill: #FFFFFF;
-}
+
 }
 
 @media only screen and (max-width: 991px) { 
@@ -1209,7 +1210,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
  padding: 20px 20px;
  
-  background: var(--background);
+  background: #FFFFFF;
 }
 
 .container-card{
@@ -1246,7 +1247,7 @@ body::-webkit-scrollbar-thumb {
 .card__thumb {
     height: 245px;
     overflow: hidden;
-    background-color: #000;
+    
     transition: height 0.5s;
 }
 
@@ -1423,4 +1424,27 @@ span {
         height: auto;
       
 	}
+}
+
+
+.container__aboutMe { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--background);
+  color: var(--primary-color);
+}
+
+
+#footer__container { 
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  text-align: center;
+ background: var(--background);
+ color: var(--primary-color);
+ padding: 1rem;
+
 }

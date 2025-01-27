@@ -86,6 +86,7 @@
   justify-content: center;
   background: linear-gradient(180deg, #010101, #070027);
   height: 100vh;
+ 
 }
 
 .text__hero {
@@ -454,6 +455,7 @@ header.abajo{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        margin-top: 30px;
      
       }
       #profile-photo {
@@ -1357,6 +1359,7 @@ span {
 .text__paragraph {
   font-family: var(--fuente-text);
     margin-bottom: 10px;
+ 
 }
 
 .programming__icon img {
@@ -1409,7 +1412,7 @@ span {
       justify-content: center;
       backdrop-filter: blur(5px);
       transition: opacity 0.3s;
-      
+     
       z-index: 1; /* Ensures overlay is on top */
       background: var(--background);
       text-align: center;

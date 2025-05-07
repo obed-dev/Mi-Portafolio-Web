@@ -968,7 +968,9 @@ margin-top: 5px;
 }
 
 #github-icon,
-#linkedin-icon {
+#linkedin-icon
+
+ {
   position: absolute;
   
 }
@@ -982,7 +984,18 @@ margin-top: 5px;
 #linkedin-icon {
   top: 50%;
   right: -20px; /* Adjust this value as needed */
+ 
   transform: translateY(-100%);
+}
+
+#alura-icon {
+  top: 150px;         
+  right: 150px;       
+  transform: none;    
+  z-index: 2;
+  width: 40px;
+  border-radius: 10%;        
+  position: absolute;
 }
 
 @media only screen and (max-width: 991px) {
@@ -1019,7 +1032,18 @@ margin-top: 5px;
   }
 
   #linkedin-icon {
-    right: -100px; /* Adjust this value as needed */
+    top: -100px;
+    left: 100px; /* Adjust this value as needed */
+  }
+
+  #alura-icon {
+    top: -40px;         
+    right: 30px;       
+    transform: none;    
+    z-index: 2;
+    width: 40px;
+    border-radius: 10%;        
+    position: absolute;
   }
 }
 
@@ -1042,7 +1066,19 @@ margin-top: 5px;
   }
 
   #linkedin-icon {
-    right: -100px; /* Adjust this value as needed */
+     top: -100px;
+    left: 100px; /* Adjust this value as needed */
+  }
+
+
+  #alura-icon {
+    top: -40px;         
+    right: 30px;       
+    transform: none;    
+    z-index: 2;
+    width: 40px;
+    border-radius: 10%;        
+    position: absolute;
   }
 }
 
@@ -1155,12 +1191,16 @@ body::-webkit-scrollbar-thumb {
   }
 
   #github-icon {
-    left: 20px; /* Adjust this value as needed */
+    display: none; /* Adjust this value as needed */
   }
 
   #linkedin-icon {
-    right: 10px; /* Adjust this value as needed */
+ display: none;
   }
+
+  #alura-icon {
+    display: none;
+     }
 
 
   .panel { 
@@ -1261,6 +1301,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.5s, transform 0.5s;
+    object-fit: cover;
 }
 
 .card:hover .card__thumb {
